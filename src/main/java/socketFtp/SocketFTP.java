@@ -1,3 +1,5 @@
+package socketFtp;
+
 import utilities.Configurations;
 import utilities.Util;
 
@@ -12,7 +14,7 @@ public class SocketFTP {
     private ServerSocket localSocket;
     private Socket remoteSocket;
 
-    Util util = new Util();
+    private Util util = new Util();
 
     public ServerSocket getLocalSocket() {
         return localSocket;

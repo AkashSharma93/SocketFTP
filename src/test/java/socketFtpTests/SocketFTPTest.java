@@ -1,7 +1,10 @@
+package socketFtpTests;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import socketFtp.SocketFTP;
 import utilities.Configurations;
 
 import java.io.IOException;
@@ -11,7 +14,7 @@ import java.net.ServerSocket;
  * Created by akash on 09/10/17.
  */
 public class SocketFTPTest {
-    SocketFTP socketFTP;
+    private SocketFTP socketFTP;
 
     private void waitForServerThread() {
         try {
