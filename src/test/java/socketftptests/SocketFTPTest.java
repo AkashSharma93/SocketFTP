@@ -1,10 +1,10 @@
-package socketFtpTests;
+package socketftptests;
 
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import socketFtp.SocketFTP;
+import socketftp.SocketFTP;
 import utilities.Configurations;
 
 import java.io.IOException;

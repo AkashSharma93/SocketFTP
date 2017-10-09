@@ -1,4 +1,4 @@
-package socketFtp;
+package socketftp;
 
 import utilities.Configurations;
 import utilities.Util;
