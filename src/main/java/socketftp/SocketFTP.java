@@ -32,13 +32,9 @@ public class SocketFTP {
         localSocket = new ServerSocket(Configurations.LOCAL_SOCKET_PORT);
     }
 
-    public void listenForRequests() {
-        try {
-            createLocalSocket();
-            localSocket.accept();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void listenForRequests() throws IOException {
+        createLocalSocket();
+        localSocket.accept();
     }
 
     public void close() {

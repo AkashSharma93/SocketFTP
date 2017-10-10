@@ -52,7 +52,14 @@ public class SocketFTPTest {
 
     @Test
     public void testListenToRequests() throws Exception {
-        Thread localSocketThread = new Thread(() -> socketFTP.listenForRequests());
+        Thread localSocketThread = new Thread(() -> {
+            try {
+                socketFTP.listenForRequests();
+            } catch (IOException e) {
+                Assert.fail("Exception while listening for requests.");
+                e.printStackTrace();
+            }
+        });
         localSocketThread.start();
         waitForServerThread();
 
@@ -67,8 +74,13 @@ public class SocketFTPTest {
     @Test
     public void testConnectivity() {
         Thread serverThread = new Thread(() -> {
-            socketFTP.listenForRequests();
-            Assert.assertNotNull(socketFTP.getRemoteSocket());
+            try {
+                socketFTP.listenForRequests();
+                Assert.assertNotNull(socketFTP.getRemoteSocket());
+            } catch (IOException e) {
+                Assert.fail("Exception while listening for requests.");
+                e.printStackTrace();
+            }
         });
         serverThread.start();
         waitForServerThread();
