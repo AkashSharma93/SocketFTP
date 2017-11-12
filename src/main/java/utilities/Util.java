@@ -4,7 +4,6 @@ import helper.FileData;
 
 import java.io.*;
 import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
 import java.nio.channels.FileChannel;
 
 /**
