@@ -1,9 +1,9 @@
 package utiltests;
 
+import com.akash.kakashi.socketftp.SocketFTP;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import socketftp.SocketFTP;
 
 public class FileReadWriteUtilTest {
     private SocketFTP socketFTP;
