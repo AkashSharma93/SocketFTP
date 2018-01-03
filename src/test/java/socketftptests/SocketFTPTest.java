@@ -1,11 +1,11 @@
 package socketftptests;
 
+import com.akash.kakashi.socketftp.SocketFTP;
+import com.akash.kakashi.utilities.Configurations;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import socketftp.SocketFTP;
-import utilities.Configurations;
 
 import java.io.IOException;
 import java.net.ServerSocket;

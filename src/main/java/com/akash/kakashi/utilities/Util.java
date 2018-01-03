@@ -1,6 +1,6 @@
-package utilities;
+package com.akash.kakashi.utilities;
 
-import helper.FileData;
+import com.akash.kakashi.helper.FileData;
 
 import java.io.*;
 import java.nio.ByteBuffer;

@@ -1,10 +1,12 @@
-package socketftp;
+package com.akash.kakashi.socketftp;
 
-import helper.FileData;
-import utilities.Configurations;
-import utilities.Util;
+import com.akash.kakashi.helper.FileData;
+import com.akash.kakashi.utilities.Configurations;
+import com.akash.kakashi.utilities.Util;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 

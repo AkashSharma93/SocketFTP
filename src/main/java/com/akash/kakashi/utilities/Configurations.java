@@ -1,4 +1,4 @@
-package utilities;
+package com.akash.kakashi.utilities;
 
 /**
  * Created by akash on 09/10/17.
